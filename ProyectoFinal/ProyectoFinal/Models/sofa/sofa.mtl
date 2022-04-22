@@ -1,0 +1,36 @@
+newmtl sofa12:wire_006135113
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.06 0.06 0.06
+Tf 1.00 1.00 1.00
+map_Kd sofa_col.jpg
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl sofa12:wire_135006006
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sofa_col.jpg
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl sofa12:wire_135059008
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.53 0.23 0.03
+Tf 1.00 1.00 1.00
+map_Kd pata_col.jpg
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00
+newmtl sofa12:wire_228184153
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.11 0.09 0.07
+Tf 1.00 1.00 1.00
+map_Kd sofa_col.jpg
+Ni 1.00
+Ks 0.35 0.35 0.35
+Ns 32.00

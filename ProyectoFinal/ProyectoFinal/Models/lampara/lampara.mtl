@@ -1,0 +1,68 @@
+newmtl Eichholtz_Academia_mat_1_:Eichholtz_Academia_mat1_mtl_1
+illum 4
+Kd 0.54 0.57 0.57
+Ka 0.59 0.59 0.59
+Tf 0.01 0.01 0.01
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Eichholtz_Academia_mat_1_:Eichholtz_Academia_mat1_mtl_3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Eichholtz_Academia_mat_1_:Eichholtz_Academia_mat1_mtl_5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Eichholtz_Academia_mat_1_:Eichholtz_Academia_mat1_mtl_6
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl Eichholtz_Academia_mat_1_:Eichholtz_Academia_mat1_mtl_8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 0.00 0.00 0.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baseLamp.png
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baseLamp.png
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lampara.png
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lampara.png
+Ni 1.00
