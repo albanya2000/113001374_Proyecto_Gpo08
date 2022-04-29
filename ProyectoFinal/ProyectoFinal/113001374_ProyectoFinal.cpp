@@ -98,7 +98,7 @@ int main( )
 
 
     // Load models
-    Model mesa((char*)"Models/mesa/mesa.obj");
+    Model cuarto((char*)"Models/cuarto/cuarto.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
     GLfloat vertices[] =
@@ -194,18 +194,18 @@ int main( )
         glm::mat4 model(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         //glDrawElements(GL_TRIANGLES, 6, GL_FLAT, 0);
-        mesa.Draw(shader);
+        cuarto.Draw(shader);
 
-        model = glm:: mat4(1);
-        model = glm::rotate(model, glm::radians(rot), glm::vec3(1.0f, 0.0f, 0.0f));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //brader.Draw(shader);
-        //box.Draw(shader);
-        //pokeArriba.Draw(shader);
-        model = glm::mat4(1);
-        //model = glm::rotate(model, glm::radians(-rot), glm::vec3(0.0f, 1.0f, 0.0f));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //pokeAbajo.Draw(shader);
+        //model = glm:: mat4(1);
+        //model = glm::rotate(model, glm::radians(rot), glm::vec3(1.0f, 0.0f, 0.0f));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        ////brader.Draw(shader);
+        ////box.Draw(shader);
+        ////pokeArriba.Draw(shader);
+        //model = glm::mat4(1);
+        ////model = glm::rotate(model, glm::radians(-rot), glm::vec3(0.0f, 1.0f, 0.0f));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        ////pokeAbajo.Draw(shader);
 
         glBindVertexArray(0);
 
