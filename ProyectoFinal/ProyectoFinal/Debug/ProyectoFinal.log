@@ -1,11 +1,1 @@
-﻿  113001374_ProyectoFinal.cpp
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\Model.h(213,24): error C3861: 'stbi_load': no se encontró el identificador
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\Model.h(233,3): error C3861: 'stbi_image_free': no se encontró el identificador
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\Model.h(238,3): error C3861: 'stbi_image_free': no se encontró el identificador
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(175,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(299,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(300,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(304,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(305,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(307,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(308,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+﻿  ProyectoFinal.vcxproj -> C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\Debug\ProyectoFinal.exe
