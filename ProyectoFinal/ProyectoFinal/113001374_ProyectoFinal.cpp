@@ -55,7 +55,7 @@ int main( )
     glfwWindowHint( GLFW_RESIZABLE, GL_FALSE );
     
     // Create a GLFWwindow object that we can use for GLFW's functions
-    GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "Practica 4", nullptr, nullptr );
+    GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "Proyecto Final", nullptr, nullptr );
     
     if ( nullptr == window )
     {
@@ -99,7 +99,7 @@ int main( )
 
 
     // Load models
-    Model cuarto((char*)"Models/cuarto/cuarto.obj");
+    Model alfombra((char*)"Models/Alfombra/alfombra.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
     GLfloat vertices[] =
@@ -195,7 +195,7 @@ int main( )
         glm::mat4 model(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         //glDrawElements(GL_TRIANGLES, 6, GL_FLAT, 0);
-        cuarto.Draw(shader);
+        alfombra.Draw(shader);
 
         //model = glm:: mat4(1);
         //model = glm::rotate(model, glm::radians(rot), glm::vec3(1.0f, 0.0f, 0.0f));
