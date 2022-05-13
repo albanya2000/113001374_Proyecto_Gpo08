@@ -142,19 +142,19 @@ int main( )
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    // Load textures
+    //// Load textures
     GLuint texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
     int textureWidth, textureHeight, nrChannels;
     stbi_set_flip_vertically_on_load(true);
-    unsigned char* image;
+    //unsigned char* image;
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
   
-    image = stbi_load("images/star1.png", &textureWidth, &textureHeight, &nrChannels, 0);
+   /* image = stbi_load("images/star1.png", &textureWidth, &textureHeight, &nrChannels, 0);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, textureWidth, textureHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
     if (image)
@@ -166,7 +166,7 @@ int main( )
     {
         std::cout << "Failed to load texture" << std::endl;
     }
-    stbi_image_free(image);
+    stbi_image_free(image);*/
 
 
     // Game loop
@@ -210,17 +210,17 @@ int main( )
 
         glBindVertexArray(0);
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture);
+        //glActiveTexture(GL_TEXTURE0);
+       // glBindTexture(GL_TEXTURE_2D, texture);
 
-        lampshader.Use();
-        //glm::mat4 model(1);
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
-        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        glBindVertexArray(0);
+        //lampshader.Use();
+        ////glm::mat4 model(1);
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        //glBindVertexArray(VAO);
+        //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        //glBindVertexArray(0);
 
         // Swap the buffers
         glfwSwapBuffers( window );

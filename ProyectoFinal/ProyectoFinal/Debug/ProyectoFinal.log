@@ -1,5 +1,8 @@
 ﻿  113001374_ProyectoFinal.cpp
 C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(176,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(149,38): warning C4101: 'nrChannels': variable local sin referencia
+C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(149,9): warning C4101: 'textureWidth': variable local sin referencia
+C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(149,23): warning C4101: 'textureHeight': variable local sin referencia
 C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(300,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(301,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\ayat0\OneDrive\Documentos\8vo semestre\compuGrafica\Repositorio\113001374_Proyecto_Gpo08\ProyectoFinal\ProyectoFinal\113001374_ProyectoFinal.cpp(305,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
