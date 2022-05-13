@@ -1,25 +1,25 @@
-newmtl initialShadingGroup
+newmtl banco:initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd pata_col.jpg
 Ni 1.00
-newmtl lambert2SG
+newmtl banco:lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd sofa_flor.jpg
 Ni 1.00
-newmtl lambert4SG
+newmtl banco:lambert4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd pata_col.jpg
 Ni 1.00
-newmtl lambert5SG
+newmtl banco:lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00

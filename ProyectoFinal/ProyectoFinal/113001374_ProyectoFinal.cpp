@@ -1,35 +1,27 @@
 // Std. Includes
 #include <string>
-
 // GLEW
 #include <GL/glew.h>
-
 // GLFW
 #include <GLFW/glfw3.h>
 // Other Libs
 #include "SOIL2/SOIL2.h"
 #include "stb_image.h"
-
 // GL includes
 #include "Shader.h"
 #include "Camera.h"
 #include "Model.h"
-
 // GLM Mathemtics
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-
-
 // Properties
 const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
-
 // Function prototypes
 void KeyCallback( GLFWwindow *window, int key, int scancode, int action, int mode );
 void MouseCallback( GLFWwindow *window, double xPos, double yPos );
 void DoMovement( );
-
 
 // Camera
 Camera camera( glm::vec3( 0.0f, 0.0f, 3.0f ) );
@@ -41,10 +33,7 @@ GLfloat deltaTime = 0.0f;
 GLfloat lastFrame = 0.0f;
 float rot = 0.0f;
 
-
-
-int main( )
-{
+int main( ){
     // Init GLFW
     glfwInit( );
     // Set all the required options for GLFW
@@ -53,85 +42,80 @@ int main( )
     glfwWindowHint( GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE );
     glfwWindowHint( GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE );
     glfwWindowHint( GLFW_RESIZABLE, GL_FALSE );
-    
     // Create a GLFWwindow object that we can use for GLFW's functions
     GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "Proyecto Final", nullptr, nullptr );
-    
-    if ( nullptr == window )
-    {
+    if ( nullptr == window ){
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate( );
-        
         return EXIT_FAILURE;
     }
-    
     glfwMakeContextCurrent( window );
-    
     glfwGetFramebufferSize( window, &SCREEN_WIDTH, &SCREEN_HEIGHT );
-    
     // Set the required callback functions
     glfwSetKeyCallback( window, KeyCallback );
     glfwSetCursorPosCallback( window, MouseCallback );
-    
     // GLFW Options
     //glfwSetInputMode( window, GLFW_CURSOR, GLFW_CURSOR_DISABLED );
-    
     // Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
     glewExperimental = GL_TRUE;
     // Initialize GLEW to setup the OpenGL Function pointers
-    if ( GLEW_OK != glewInit( ) )
-    {
+    if ( GLEW_OK != glewInit( ) ){
         std::cout << "Failed to initialize GLEW" << std::endl;
         return EXIT_FAILURE;
     }
-    
     // Define the viewport dimensions
     glViewport( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT );
-    
     // OpenGL options
     glEnable( GL_DEPTH_TEST );
-    
     // Setup and compile our shaders
     Shader shader( "Shaders/modelLoading.vs", "Shaders/modelLoading.frag" );
     Shader lampshader( "Shaders/lamp.vs", "Shaders/lamp.frag" );
-    
-
-
 
     // Load models
-    Model alfombra((char*)"Models/Alfombra/alfombra.obj");
+    Model alfombra1((char*)"Models/Alfombra/alfombra1.obj");
+    Model alfombra2((char*)"Models/Alfombra/alfombra2.obj");
+    Model banco((char*)"Models/banco/banco.obj");
+    Model librero((char*)"Models/estante/Librero.obj");
+    Model lObj1((char*)"Models/estante/Objeto1.obj");
+    Model lObj2((char*)"Models/estante/Objeto2.obj");
+    Model lObj3((char*)"Models/estante/Objeto3.obj");
+    Model lObj4((char*)"Models/estante/Objeto4.obj");
+    Model lObj5((char*)"Models/estante/Objeto5.obj");
+    Model lObj6((char*)"Models/estante/Objeto6.obj");
+    Model lObj7((char*)"Models/estante/Objeto7.obj");
+    Model lObj8((char*)"Models/estante/Objeto8.obj");
+    Model lObj9((char*)"Models/estante/Objeto9.obj");
+    Model lObj10((char*)"Models/estante/Objeto10.obj");
+    Model lObj11((char*)"Models/estante/Objeto11.obj");
+    Model lObj12((char*)"Models/estante/Objeto12.obj");
+
+
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
-    
-    GLfloat vertices[] =
-    {
+    GLfloat vertices[] = {
         // positions          // colors           // texture coords
-     0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,   // top right
-     0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   0.0f, 0.0f,   // bottom right
-    -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
-    -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 0.0f    // top left 
+         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,   // top right
+         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   0.0f, 0.0f,   // bottom right
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
+        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 0.0f    // top left 
 
     };
 
-    GLuint indices[] =
-    {  // Note that we start from 0!
+    GLuint indices[] ={
+        // Note that we start from 0!
         0,1,3,
         1,2,3
 
     };
-
     // First, set the container's VAO (and VBO)
     GLuint VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
-
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
     // Position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid*)0);
     glEnableVertexAttribArray(0);
@@ -141,7 +125,6 @@ int main( )
     // texture coord attribute
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
-
     //// Load textures
     GLuint texture;
     glGenTextures(1, &texture);
@@ -153,74 +136,50 @@ int main( )
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
-  
    /* image = stbi_load("images/star1.png", &textureWidth, &textureHeight, &nrChannels, 0);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, textureWidth, textureHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
     glGenerateMipmap(GL_TEXTURE_2D);
-    if (image)
-    {
+    if (image){
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, textureWidth, textureHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
-    else
-    {
+    else{
         std::cout << "Failed to load texture" << std::endl;
     }
     stbi_image_free(image);*/
-
-
     // Game loop
-    while (!glfwWindowShouldClose(window))
-    {
+    while (!glfwWindowShouldClose(window)){
         // Set frame time
         GLfloat currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
-
         // Check and call events
         glfwPollEvents();
         DoMovement();
-
         // Clear the colorbuffer
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
         shader.Use();
-
         glm::mat4 view = camera.GetViewMatrix();
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
         // Draw the loaded model
+
+        //Alfombra1
         glm::mat4 model(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //glDrawElements(GL_TRIANGLES, 6, GL_FLAT, 0);
-        alfombra.Draw(shader);
+        alfombra1.Draw(shader);
+        glBindVertexArray(0);
+
+        //Alfombra2
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        alfombra2.Draw(shader);
+        glBindVertexArray(0);
 
         //model = glm:: mat4(1);
         //model = glm::rotate(model, glm::radians(rot), glm::vec3(1.0f, 0.0f, 0.0f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        ////brader.Draw(shader);
-        ////box.Draw(shader);
-        ////pokeArriba.Draw(shader);
-        //model = glm::mat4(1);
-        ////model = glm::rotate(model, glm::radians(-rot), glm::vec3(0.0f, 1.0f, 0.0f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        ////pokeAbajo.Draw(shader);
-
-        glBindVertexArray(0);
-
-        //glActiveTexture(GL_TEXTURE0);
-       // glBindTexture(GL_TEXTURE_2D, texture);
-
-        //lampshader.Use();
-        ////glm::mat4 model(1);
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //glBindVertexArray(VAO);
-        //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        //glBindVertexArray(0);
 
         // Swap the buffers
         glfwSwapBuffers( window );
