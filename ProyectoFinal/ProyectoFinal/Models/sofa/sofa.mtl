@@ -1,3 +1,122 @@
+newmtl Librero:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd color.png
+Ni 1.00
+newmtl Librero:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd color.png
+Ni 1.00
+newmtl Librero:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd color.png
+Ni 1.00
+newmtl Librero:pasted__lambert2SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd color.png
+Ni 1.00
+newmtl Objeto1:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sofa_flor.jpg
+Ni 1.00
+newmtl Objeto2:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl Objeto3:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pink.jpg
+Ni 1.00
+newmtl Objeto4:lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bi2.jpg
+Ni 1.00
+newmtl Objeto5:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd blue.jpg
+Ni 1.00
+newmtl Objeto6:lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marble.jpg
+Ni 1.00
+newmtl Objeto7:lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pink.jpg
+Ni 1.00
+newmtl Objeto7:lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pink.jpg
+Ni 1.00
+newmtl Objeto8:lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd bi.jpg
+Ni 1.00
+newmtl Objeto9:lambert13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd gray.jpg
+Ni 1.00
+newmtl Objeto10:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marble.jpg
+Ni 1.00
+newmtl Objeto11:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd red.jpg
+Ni 1.00
+newmtl Objeto12:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd garden.jpg
+Ni 1.00
 newmtl _Victor_V_phonograph_v2_Texture:_20343_Victor_V_phonograph_v220343_Victor_V_phonograph_v2
 illum 4
 Kd 0.00 0.00 0.00
@@ -8,6 +127,34 @@ map_Ka 20343_Victor_V_phonograph_v2_diff.jpg
 Ni 1.50
 Ks 0.30 0.30 0.30
 Ns 10.00
+newmtl alfombra1:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 1.png
+Ni 1.00
+newmtl alfombra1:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 2.png
+Ni 1.00
+newmtl alfombra1:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 3.png
+Ni 1.00
+newmtl alfombra2:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 4.png
+Ni 1.00
 newmtl banco:initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
@@ -36,6 +183,267 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd sofa_flor.jpg
 Ni 1.00
+newmtl banco1:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pata_col.jpg
+Ni 1.00
+newmtl banco1:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sofa_flor.jpg
+Ni 1.00
+newmtl banco1:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pata_col.jpg
+Ni 1.00
+newmtl banco1:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sofa_flor.jpg
+Ni 1.00
+newmtl base:Eichholtz_Academia_mat1_mtl_1
+illum 4
+Kd 0.54 0.57 0.57
+Ka 0.59 0.59 0.59
+Tf 0.01 0.01 0.01
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl base:Eichholtz_Academia_mat1_mtl_3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl base:Eichholtz_Academia_mat1_mtl_5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl base:Eichholtz_Academia_mat1_mtl_8
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 0.00 0.00 0.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl base:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baseLamp.png
+Ni 1.00
+newmtl base:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd baseLamp.png
+Ni 1.00
+newmtl casa:blinn1SG
+illum 4
+Kd 0.45 0.80 0.84
+Ka 0.00 0.00 0.00
+Tf 0.95 0.95 0.95
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl casa:blinn2SG
+illum 4
+Kd 0.45 0.80 0.84
+Ka 0.00 0.00 0.00
+Tf 0.77 0.77 0.77
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl casa:blinn3SG
+illum 4
+Kd 0.45 0.80 0.84
+Ka 0.00 0.00 0.00
+Tf 0.88 0.88 0.88
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl casa:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd techo_azul.png
+Ni 1.00
+newmtl casa:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd techo_azul.png
+Ni 1.00
+newmtl casa:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree.png
+Ni 1.00
+newmtl casa:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
+newmtl casa:lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
+newmtl casa:lambert9SG
+illum 4
+Kd 1.00 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl casa:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
+newmtl casa:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cafe.png
+Ni 1.00
+newmtl casa:lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl casa:pasted__lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd amarillo.png
+Ni 1.00
+newmtl casa:pasted__lambert3SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd blue.png
+Ni 1.00
+newmtl casa:pasted__lambert3SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd blue.png
+Ni 1.00
+newmtl casa:pasted__lambert3SG6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rosado.png
+Ni 1.00
+newmtl casa:pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pink.jpg
+Ni 1.00
+newmtl casa:pasted__pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl casa:pasted__pasted__lambert6SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree.png
+Ni 1.00
+newmtl casa:pasted__pasted__pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl chimenea:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd water.png
+Ni 1.00
+newmtl chimenea:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd madera_blanca.jpg
+Ni 1.00
+newmtl chimenea:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl chimenea:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl chimenea:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd wall.jpg
+Ni 1.00
+newmtl disco:_20343_Victor_V_phonograph_v220343_Victor_V_phonograph_v2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 20343_Victor_V_phonograph_v2_diff.jpg
+map_Ka 20343_Victor_V_phonograph_v2_diff.jpg
+Ni 1.50
+Ks 0.30 0.30 0.30
+Ns 10.00
 newmtl estante:lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -155,6 +563,16 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd color.png
 Ni 1.00
+newmtl fonografo:_20343_Victor_V_phonograph_v220343_Victor_V_phonograph_v2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 20343_Victor_V_phonograph_v2_diff.jpg
+map_Ka 20343_Victor_V_phonograph_v2_diff.jpg
+Ni 1.50
+Ks 0.30 0.30 0.30
+Ns 10.00
 newmtl lampara:Eichholtz_Academia_mat1_mtl_1
 illum 4
 Kd 0.54 0.57 0.57
@@ -223,7 +641,54 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd lampara.png
 Ni 1.00
-newmtl sofa13:wire_006135113
+newmtl mampara:Eichholtz_Academia_mat1_mtl_3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl mampara:Eichholtz_Academia_mat1_mtl_6
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.59 0.59 0.59
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.00 0.00 0.00
+Ns 10.00
+newmtl mampara:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lampara.png
+Ni 1.00
+newmtl mampara:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd lampara.png
+Ni 1.00
+newmtl manivela:_20343_Victor_V_phonograph_v220343_Victor_V_phonograph_v2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 20343_Victor_V_phonograph_v2_diff.jpg
+map_Ka 20343_Victor_V_phonograph_v2_diff.jpg
+Ni 1.50
+Ks 0.30 0.30 0.30
+Ns 10.00
+newmtl mesa2:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd colorMesa.png
+Ni 1.00
+newmtl sofa14:wire_006135113
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.06 0.06 0.06
@@ -232,7 +697,7 @@ map_Kd sofa_col.jpg
 Ni 1.00
 Ks 0.35 0.35 0.35
 Ns 32.00
-newmtl sofa13:wire_135006006
+newmtl sofa14:wire_135006006
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -241,7 +706,7 @@ map_Kd sofa_col.jpg
 Ni 1.00
 Ks 0.35 0.35 0.35
 Ns 32.00
-newmtl sofa13:wire_135059008
+newmtl sofa14:wire_135059008
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.53 0.23 0.03
@@ -250,7 +715,7 @@ map_Kd pata_col.jpg
 Ni 1.00
 Ks 0.35 0.35 0.35
 Ns 32.00
-newmtl sofa13:wire_228184153
+newmtl sofa14:wire_228184153
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.11 0.09 0.07
